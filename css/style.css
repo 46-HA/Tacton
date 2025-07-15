@@ -1,0 +1,501 @@
+/* Style */
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,900);
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+
+* {
+  scroll-behavior: smooth;
+  /* border: 1px solid yellow; */
+}
+
+.txt::selection {
+  color: rgb(255, 255, 255) !important;
+  background-color: #000000 !important;
+}
+
+.txtdev::selection {
+  color: rgb(17, 17, 17) !important;
+  background-color: #f1f1f1 !important;
+  text-decoration: underline;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Lato";
+  z-index: 1;
+}
+
+body::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(0, 0, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #ffffff;
+}
+
+button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+body {
+  background: #111;
+}
+
+button {
+  background: #333;
+  color: #ccc;
+  width: 200px;
+  height: 60px;
+  border: 0;
+  font-size: 18px;
+  border-radius: 4px;
+  font-family: "Raleway", sans-serif;
+  transition: 0.6s;
+  overflow: hidden;
+}
+button:focus {
+  outline: 0;
+}
+button:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5);
+  width: 60px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0.5;
+  filter: blur(30px);
+  transform: translateX(-100px) skewX(-15deg);
+}
+button:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  width: 30px;
+  height: 100%;
+  left: 30px;
+  top: 0;
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100px) skewX(-15deg);
+}
+button:hover {
+  background: #338033;
+}
+button:hover:before {
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 0.6;
+  transition: 0.7s;
+}
+button:hover:after {
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 1;
+  transition: 0.7s;
+}
+
+.logo {
+  position: fixed;
+  top: 10px !important;
+  left: 10px !important;
+  font-weight: 700;
+  font-size: 1.3em;
+  z-index: 100;
+  padding: 8px;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: none !important;
+}
+
+.logo:before {
+  content: "Home!";
+  color: #fff;
+  opacity: 0;
+  position: absolute;
+  cursor: grab !important;
+  right: 0px;
+  top: 40px;
+  font-size: 15px;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+}
+
+.logo:hover:before {
+  opacity: 0.3;
+  z-index: 99;
+}
+
+.ok {
+  position: relative;
+}
+.ok1 {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.homepage {
+  width: 100vw;
+  height: 90vh;
+  overflow-x: none;
+  background-color: rgb(0, 0, 0);
+  background-image: url("../img/Shadows.png");
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.head {
+  color: #eaeaea;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 60px;
+  /* height: 100vh;
+  width: 100%;
+  z-index: 10; */
+  text-align: center;
+  line-height: 25px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  overflow: hidden;
+}
+
+.head-hide {
+  height: 0vh;
+  opacity: 0;
+}
+
+.down {
+  width: 20px;
+  height: 20px;
+  opacity: 0.5;
+  font-family: "Poppins", sans-serif;
+  border-bottom: 5px solid #cf3b28;
+  border-right: 5px solid #cf3b28;
+  position: absolute;
+  bottom: 13px;
+  left: 50%;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  cursor: grab !important;
+}
+
+.down:active {
+  cursor: grabbing !important;
+}
+
+.down:before {
+  content: "scroll";
+  color: #fff;
+  opacity: 0;
+  position: absolute;
+  cursor: grab !important;
+  right: -10px;
+  top: -10px;
+  font-size: 15px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+}
+
+.down:hover:before {
+  opacity: 2;
+  z-index: 99;
+}
+
+.head span {
+  font-weight: 900;
+}
+
+.name {
+  font-family: "Poppins", sans-serif;
+  width: 500px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  margin-left: -250px;
+  margin-top: -30px;
+}
+
+.sub-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 9px;
+  font-weight: lighter;
+  margin-left: 23px;
+  color: #cf3b28;
+  font-size: 35px;
+  font-family: "Aboreto";
+}
+
+.this::selection,
+.this2::selection {
+  color: rgb(255, 255, 255) !important;
+}
+
+.pg-btn {
+  width: 150px;
+  height: 35px;
+  line-height: 15px;
+  border-bottom: 2px solid #b3c8ff;
+  padding: 10px 0;
+  cursor: grab !important;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.pg-btn:active {
+  cursor: grabbing !important;
+}
+
+.pg-btn::selection {
+  color: rgb(249, 249, 249) !important;
+  background-color: #000000 !important;
+}
+
+.begin {
+  background: #76767653;
+  margin: 30px auto;
+  letter-spacing: 5px;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+}
+
+.begin:hover {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  border-bottom: 3px solid #cf3b28;
+  letter-spacing: 6px;
+}
+
+.begin:active {
+  background-color: #111;
+}
+
+.side {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  width: 100%;
+  z-index: 11;
+  height: auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background: #1f1f1fdc;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+
+.side::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+.side::-webkit-scrollbar-track {
+  background: rgb(0, 0, 0);
+}
+
+.side::-webkit-scrollbar-thumb {
+  background: #ffffff;
+}
+
+.unseen {
+  display: none;
+}
+
+.showing {
+  left: 0;
+}
+
+.sec-A h1 {
+  color: #fff;
+  font-size: 34px;
+  text-align: center;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); */
+}
+
+.sec-A h1 span {
+  font-weight: 300;
+  font-size: 25px;
+  color: #aaa;
+  line-height: 0;
+}
+
+.photos ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.photos li {
+  text-align: center;
+  display: inline-block;
+  min-width: 350px;
+  margin: 10px;
+}
+
+.photos img {
+  max-width: 100%;
+  height: 600px;
+}
+
+.sub-btn {
+  margin: 0 auto;
+  width: 120px;
+  text-align: center;
+  text-transform: uppercase;
+  height: 35px;
+  padding: 10px 0;
+  font-weight: 300;
+  line-height: 15px;
+  font-size: 15px;
+  letter-spacing: 3px;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+}
+
+.code-btn {
+  border-bottom: 1px solid #222;
+  background: #000000;
+  color: #ffffff;
+}
+
+.code-btn:hover {
+  background: #222;
+  letter-spacing: 4px;
+  border-bottom: 1px solid #cf3b28;
+  color: #eaeaea;
+}
+
+.back-btn {
+  background: #cf3b28;
+  color: #eaeaea;
+  border-bottom: 1px solid #222;
+}
+
+.back-btn:hover {
+  background: #eaeaea;
+  color: #222;
+  letter-spacing: 5px;
+}
+
+/* .sec-B {
+  background: #cf3b28;
+} */
+
+/* .sec-B h1 {
+  color: #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+} */
+
+.about-me {
+  margin-top: 20px;
+  padding: 50px 150px;
+  position: relative;
+  color: #fff;
+}
+
+p.about-content {
+  color: #f3f3f3fa;
+  font-size: 1.6em;
+  max-width: 55%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+br::selection {
+  background-color: #000000;
+  color: #fff;
+}
+
+@media (max-width: 770px) {
+  p.about-content {
+    color: #f3f3f3fa;
+    font-size: 1.4em;
+    max-width: 75%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .sub-name {
+    position: absolute;
+    top: 50.5%;
+    left: 35%;
+    margin-top: 7px;
+    font-weight: 300;
+    margin-left: 10px;
+    color: #cf3b28;
+    font-size: 35px;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+
+  .name {
+    width: 0px;
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    margin-left: -180px;
+    margin-top: -30px;
+  }
+
+  .this2 {
+    letter-spacing: 7px;
+  }
+
+  .homepage {
+    background-image: url("../img/Shadows.png");
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .about-me {
+    padding: 50px;
+  }
+}
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */

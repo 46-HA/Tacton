@@ -1,0 +1,181 @@
+.aboutme-title {
+  color: white !important;
+  border-bottom: 0px !important;
+}
+
+.content-wrap {
+  position: absolute;
+  z-index: 1;
+}
+.sec {
+  height: 100vh;
+  width: 100vw;
+}
+.intro {
+  background-image: url("../img/Shadows1.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-color: #1f1f1f;
+  color: #eaeaea;
+  text-align: center;
+  display: table;
+  text-transform: uppercase;
+}
+
+.intro .text-contain {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  padding-left: 10px;
+}
+
+.intro .text {
+  padding-top: 30px;
+  text-align: center;
+  width: 550px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro h2 {
+  font-family: "Lexend Deca", sans-serif;
+  vertical-align: middle;
+  font-size: 50px;
+  margin: -5px 0;
+}
+
+.intro h2::selection {
+  color: rgb(255, 255, 255) !important;
+  background-color: #000000 !important;
+}
+
+.intro h3 {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 300;
+  color: #9d28cf;
+  font-size: 30px;
+  white-space: nowrap;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  letter-spacing: 0.5px;
+  margin: 0 0 0px 0;
+}
+
+.intro h3::selection {
+  color: rgb(0, 0, 0) !important;
+  background-color: #ffffff !important;
+}
+
+.intro h5 {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 500;
+  color: #efefef;
+  margin: 0;
+  font-size: 18px;
+  letter-spacing: 3.9px;
+}
+
+.intro h5::selection {
+  color: rgb(255, 255, 255) !important;
+  background-color: #000000 !important;
+}
+
+#bot-h5 {
+  font-family: "Lexend Deca", sans-serif !important;
+  color: #f2eee6;
+  width: max-content;
+  letter-spacing: 10px;
+  margin-top: 30px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fff;
+}
+
+.bot5::selection {
+  font-family: "Lexend Deca", sans-serif !important;
+  color: rgb(255, 255, 255) !important;
+  background-color: #000000;
+  text-decoration: underline;
+}
+
+@media (max-width: 770px) {
+  .intro .text-contain {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding-left: 0px;
+  }
+  .intro .text {
+    text-align: center;
+    width: 350px;
+    margin: 0 auto;
+  }
+
+  .intro {
+    background-image: url("../img/Shadows1.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-color: #1f1f1f;
+    color: #eaeaea;
+    text-align: center;
+    display: table;
+    text-transform: uppercase;
+  }
+
+  .intro h2 {
+    vertical-align: middle;
+    font-size: 40px;
+    margin: -5px 0;
+  }
+
+  .intro h2::selection {
+    color: rgb(255, 255, 255) !important;
+    background-color: #000000 !important;
+  }
+
+  .intro h3 {
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 300;
+    color: #9d28cf;
+    font-size: 19px;
+    white-space: normal;
+    letter-spacing: 0.5px;
+    margin: 0 0 0px 0;
+  }
+
+  .intro h3::selection {
+    color: rgb(0, 0, 0) !important;
+    background-color: #ffffff !important;
+  }
+
+  .intro h5 {
+    font-weight: 900;
+    color: #ececec;
+    margin: 0;
+    font-size: 15px;
+    letter-spacing: 3.9px;
+  }
+
+  .intro h5::selection {
+    color: rgb(255, 255, 255) !important;
+    background-color: #000000 !important;
+  }
+
+  #bot-h5 {
+    margin: 2%;
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin-top: 30px;
+    padding-top: auto;
+    padding-bottom: auto;
+    padding-left: 50px; /* Adjust this value as needed */
+    padding-right: 50px; /* Adjust this value as needed */
+  }
+}

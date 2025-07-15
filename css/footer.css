@@ -1,0 +1,112 @@
+.effect {
+  width: 100%;
+  padding: 0px 0px 70px 0px;
+  background-color: none;
+}
+.effect h2 {
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 25px;
+  letter-spacing: 3px;
+}
+.effect:nth-child(2) {
+  margin-top: 50px;
+}
+.effect:nth-child(2n + 1) {
+  background-color: #1f1f1f00;
+}
+.effect:nth-child(2n + 1) h2 {
+  color: #212121;
+}
+.effect:nth-child(2n) a {
+  color: #fff;
+  border-color: #fff;
+}
+.effect .buttons {
+  display: flex;
+  justify-content: center;
+  /* padding: 0px 0px 0px 90px; */
+}
+
+/* styles for a common effect !!!YOU NEED THEM
+.effect {
+  display: flex; !!!uncomment this line !!!
+} */
+
+.effect a {
+  text-decoration: none !important;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 20px;
+  font-size: 25px;
+  overflow: hidden;
+  position: relative;
+  color: #ffffff;
+  border: 2px solid #f5f5f5;
+}
+.effect a i {
+  position: relative;
+  z-index: 3;
+}
+.effect a:last-child {
+  margin-right: 0px;
+}
+.effect a:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.effect a i {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* thurio effect */
+.effect.thurio a {
+  transition: border-radius 0.2s linear 0s;
+  transform: rotate(45deg);
+}
+.effect.thurio a i {
+  transition: transform 0.01s linear 0s;
+  transform: rotate(-45deg);
+}
+.effect.thurio a:hover {
+  border-radius: 0px;
+}
+
+.email {
+  font-family: "Lexend Deca", sans-serif;
+  text-decoration: none;
+  color: #fff;
+}
+
+.email:hover {
+  text-decoration: underline;
+  color: #f5f5f5;
+}
+
+.mail {
+  padding: 0px 10px 20px;
+}
+
+.contact {
+  padding: 0px 100px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 770px) {
+  .contact {
+    padding: 20px 10px;
+    flex-direction: column;
+  }
+}

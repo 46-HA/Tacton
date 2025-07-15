@@ -1,0 +1,118 @@
+/* Skilss */
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+
+.skillSection {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px; /* optional */
+  padding: 10px 30px;
+  color: #ffffff;
+}
+
+h2::selection {
+  color: #000000 !important;
+  background-color: rgb(255, 255, 255) !important;
+  text-shadow: #ff6f61;
+}
+h4::selection {
+  color: #000000 !important;
+  background-color: rgb(255, 255, 255) !important;
+}
+img::selection {
+  color: #000000 !important;
+}
+
+.skilldiv {
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.skillRow {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.skillChips {
+  width: max-content;
+  padding: 10px 15px;
+  background: #222222;
+  border: 1px solid #6969694f;
+  border-radius: 3px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-family: "Lexend Deca", sans-serif;
+  white-space: nowrap;
+}
+
+.skillChips:hover {
+  /* border: 1px solid #000000 !important; */
+  border-radius: 3px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  background: #5f4b8b;
+}
+.skillChips1:hover {
+  background: #ff6f61 !important;
+}
+.skillChips2:hover {
+  background: #5f898b !important;
+}
+.skillChips3:hover {
+  background: #88b04b !important;
+}
+
+.skillChips img,
+.skillChips h4 {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+.skillChips h4 {
+  font-size: 1.2rem;
+}
+
+.skilldiv:nth-child(even) {
+  padding: 50px 30px;
+  padding-top: 20px;
+}
+
+.skilldiv:nth-child(n + 3) {
+  border-top: 1px solid #6969697a;
+}
+.skilldiv:nth-child(odd) {
+  border-right: 1px solid #6969697a;
+}
+
+@media (max-width: 767px) {
+  .skilldiv:nth-child(n + 2) {
+    border-top: 1px solid #6969697a;
+  }
+  .skillSection {
+    grid-template-columns: 1fr;
+  }
+  .skilldiv:nth-child(odd) {
+    border-right: 0px;
+  }
+}
+
+/* Media query for screens smaller than 480px */
+@media (max-width: 479px) {
+  .skillSection {
+    padding: 10px;
+  }
+}
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */

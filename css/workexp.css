@@ -1,0 +1,45 @@
+/*work-exp  */
+.experience {
+  margin-top: 20px;
+  padding: 50px 150px;
+  margin-left: 100px;
+  position: relative;
+  color: #fff;
+  font-size: 1.2em;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.exp {
+  color: #ffb800;
+}
+
+.compName {
+  color: #00d587 !important;
+}
+
+.compLink {
+  font-size: 0.9em;
+  font-weight: 400;
+  text-decoration: none;
+  color: #fff;
+  margin-left: 9.6px;
+}
+
+.compLink:hover {
+  font-size: 0.9em;
+  font-weight: 400;
+  text-decoration: none;
+  color: #8d8d8d;
+  margin-left: 9.6px;
+}
+
+@media (max-width: 770px) {
+  .experience {
+    margin-left: 0px;
+    padding: 50px;
+  }
+
+  .compLink {
+    font-size: 1.2em;
+  }
+}

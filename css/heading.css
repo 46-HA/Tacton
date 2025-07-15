@@ -1,0 +1,133 @@
+.unique {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10px;
+  color: white;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  margin-top: 30px;
+  text-shadow: 0.03em 0.03em 0 #cf3b28;
+  white-space: nowrap;
+}
+
+.unique h1 {
+  position: relative;
+  z-index: 1;
+  font-size: 2em;
+}
+
+.unique h1:after {
+  content: attr(data-shadow);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 55%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  text-shadow: none;
+  background-image: linear-gradient(
+    45deg,
+    transparent 45%,
+    hsla(48, 20%, 90%, 1) 45%,
+    hsla(48, 20%, 90%, 1) 55%,
+    transparent 0
+  );
+  background-size: 0.05em 0.05em;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shad-anim 15s linear infinite;
+}
+
+@keyframes shad-anim {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% -100%;
+  }
+}
+
+.unique h1::selection {
+  color: rgb(17, 17, 17) !important;
+  background-color: #f1f1f1 !important;
+  text-decoration: underline;
+}
+
+.unique-exp h1:after {
+  content: attr(data-shadow);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 55%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  text-shadow: none;
+  background-image: linear-gradient(
+    45deg,
+    transparent 45%,
+    hsla(48, 20%, 90%, 1) 45%,
+    hsla(48, 20%, 90%, 1) 55%,
+    transparent 0
+  );
+  background-size: 0.05em 0.05em;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shad-anim 15s linear infinite;
+}
+.unique-cer h1:after {
+  content: attr(data-shadow);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 55%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  text-shadow: none;
+  background-image: linear-gradient(
+    45deg,
+    transparent 45%,
+    hsla(48, 20%, 90%, 1) 45%,
+    hsla(48, 20%, 90%, 1) 55%,
+    transparent 0
+  );
+  background-size: 0.05em 0.05em;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shad-anim 15s linear infinite;
+}
+
+@media (max-width: 770px) {
+  .unique {
+    font-size: 2em;
+  }
+  .unique-exp {
+    font-size: 1.3em !important;
+  }
+
+  .unique-pro {
+    font-size: 1.4em !important;
+  }
+}
+
+@media (max-width: 350px) {
+  .unique {
+    font-size: 2em;
+  }
+  .unique-exp {
+    font-size: 1em !important;
+  }
+
+  .unique-pro {
+    font-size: 1.2em !important;
+  }
+}
